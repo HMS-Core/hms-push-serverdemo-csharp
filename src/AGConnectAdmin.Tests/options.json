@@ -1,0 +1,6 @@
+{
+    "login_uri": "https://login.cloud.huawei.com/oauth2/v2/token",
+    "api_base_uri": "https://push-api.cloud.huawei.com",
+    "dev_app_id": "YOUR_REGISTRATION_APPID",
+    "client_secret": "YOUR_REGISTRATION_APPSECRET"
+}
