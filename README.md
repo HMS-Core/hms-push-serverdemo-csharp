@@ -1,5 +1,5 @@
 # HMS Pushkit Csharp Severdemo
-# Table of Contents
+## Table of Contents
 * [Introduction](#introduction)
 * [Installation](#installation)
 * [Configuration](#configuration)
