@@ -270,20 +270,25 @@ namespace AGConnectAdmin.Messaging
             string accessToken = tokenResponse?.GetValidAccessToken();
             if (string.IsNullOrEmpty(accessToken))
             {
-                lock (accessTokenTaskLock)
+                try
                 {
-                    if (accessTokenTask == null)
+                    lock (accessTokenTaskLock)
                     {
-                        // access token task may be shared by multiple messaging task, thus should not pass cancellationToken to it
-                        accessTokenTask = RequestAccessTokenAsync(default);
+                        if (accessTokenTask == null)
+                        {
+                            // access token task may be shared by multiple messaging task, thus should not pass cancellationToken to it
+                            accessTokenTask = RequestAccessTokenAsync(default);
+                        }
                     }
+
+                    accessToken = await accessTokenTask.ConfigureAwait(false);
                 }
-
-                accessToken = await accessTokenTask.ConfigureAwait(false);
-
-                lock (accessTokenTaskLock)
+                finally
                 {
-                    accessTokenTask = null;
+                    lock (accessTokenTaskLock)
+                    {
+                        accessTokenTask = null;
+                    }
                 }
             }
 
