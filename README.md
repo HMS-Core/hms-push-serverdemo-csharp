@@ -1,87 +1,92 @@
-# HMS Pushkit Csharp Severdemo
-English | [中文](https://github.com/HMS-Core/hms-push-serverdemo-csharp/blob/master/README_ZH.md)
-
-## Table of Contents
-* [Introduction](#introduction)
-* [Installation](#installation)
-* [Configuration](#configuration)
-* [Supported Environment](#supported-environment)
-* [Sample Code](#sample-code)
-* [License](#license)
+# HMS Core Push Kit Sample Code (C#)
+English | [中文](README_ZH.md)
+## Contents
+ * [Introduction](#Introduction)
+ * [Installation](#Installation)
+ * [Configuration](#Configuration)
+ * [Environment Requirements](#Environment-Requirements)
+ * [Sample Code](#Sample-Code)
+ * [License](#License)
 
 ## Introduction
 
-C# sample code encapsulates APIs of the HUAWEI Push Kit server. It provides many sample programs for your reference or usage. The following table describes folders of C# sample code:
+The sample code for C# encapsulates the server-side APIs of Push Kit, for your reference or direct use.
 
-| Folder       | Description |
+The following table describes folders of C# sample code.
+| Folder| Description|
 | ------------ | ----------- |
-|AGConnectAdmin|Class library encapsulated for HUAWEI Push Kit.|
-|AGConnectAdmin.Examples|Examples of using the Class library.|
+|AGConnectAdmin|Class library where Push Kit server APIs are encapsulated.|
+|AGConnectAdmin.Examples|Class library usage examples.|
 
-The following table defines main classes in the sample code:
-
-| Class       | Description |
+The following table describes main classes used in the sample code.
+| Class Name| Description|
 | ----------- | ----------- |
-|AppOptions|App configurations.|
+|AppOptions|App-related configuration.|
 |AGConnectApp|App.|
-|AGConnectMessaging|HUAWEI Push Kit API calling methods.|
-|Message|Body of a message.|
+|AGConnectMessaging|Push Kit API calling methods.|
+|Message|Message body.|
 
 ## Installation
 
 1. Decompress the sample code.
-2. Copy the decompressed **AGConnectAdmin** project to a proper location in your app's Visual Studio Solution, and then reference the project in your app project.
-3. Refer to the example codes to find out how to use classes in **AGConnectAdmin** project.
+2. Copy **AGConnectAdmin** to a proper position in your Visual Studio solution and reference the corresponding assembly in your project.
+3. Use the classes in **AGConnectAdmin** by referring to the sample code.
 
 ## Configuration
 
-The following table describes parameters of the **AppOptions** class:
+The following table describes the parameters related to the **AppOptions** class.
 
-| Parameter   | Description |
+| Parameter| Description|
 | ----------- | ----------- |
-|ClientId|App ID, which is obtained from app information.|
-|ClientSecret|Secret access key of an app, which is obtained from app information.|
-|LoginUri|URL for the Huawei OAuth 2.0 service to obtain a token, please refer to [Generating an App-Level Access Token](https://developer.huawei.com/consumer/en/doc/development/parts-Guides/generating_app_level_access_token).|
-|ApiBaseUri|URL for accessing HUAWEI Push Kit, please refer to [Sending Messages](https://developer.huawei.com/consumer/en/doc/development/HMS-References/push-sendapi).|
+|ClientId|App ID, which is obtained from the app information.|
+|ClientSecret|App secret, which is obtained from the app information.|
+|LoginUri|URL for Huawei OAuth 2.0 to obtain a token. For details, please refer to [OAuth 2.0-based Authentication](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/oauth2-0000001212610981?ha_source=hms1).|
+|ApiBaseUri|Access address of Push Kit. For details, please refer to [Downlink Message Sending](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/android-server-dev-0000001050040110?ha_source=hms1).|
 
-## Supported Environment
+## Environment Requirements
 
-Sample code projects need to be opened by Visual Studio 2017 or a later version and supports the following frameworks:
+The demo projects need to be opened using Visual Studio 2017 or a later version. The following framework versions are supported:
 
-- .NET Framework 4.5+
-- .NET Standard 2.0+
+- .NET Framework 4.5 or later
+- .NET Standard 2.0 or later
 
 ## Sample Code
 
-All sample code are in **AGConnectAdmin.Examples** project included below use cases.
+**AGConnectAdmin.Examples** provides all sample code and corresponding functions.
 
-1. Send an Android data message.
-   > AGConnectAdmin.Examples/Example.SendDataMessage.cs
-2. Send an Android notification message.
-   > AGConnectAdmin.Examples/Example.SendAndroidMessage.cs
+1. Send a data message to an Android app.
+File path: **AGConnectAdmin.Examples/Example.SendDataMessage.cs**
+
+2. Send a notification message to an Android app.
+File path: **AGConnectAdmin.Examples/Example.SendAndroidMessage.cs**
+
 3. Send a message by topic.
-   > AGConnectAdmin.Examples/Example.SendTopicMessage.cs
-4. Send a message by conditions.
-   > AGConnectAdmin.Examples/Example.SendConditionMessage.cs
+File path: **AGConnectAdmin.Examples/Example.SendTopicMessage.cs**
+
+4. Send a message by condition.
+File path: **AGConnectAdmin.Examples/Example.SendConditionMessage.cs**
+
 5. Send a message to a Huawei quick app.
-   > AGConnectAdmin.Examples/Example.SendInstanceAppMessage.cs
-6. Send a message through the WebPush agent.
-   > AGConnectAdmin.Examples/Example.SendWebpushMessage.cs
-7. Send a message through the APNs agent.
-   > AGConnectAdmin.Examples/Example.SendApnsMessage.cs
+File path: **AGConnectAdmin.Examples/Example.SendInstanceAppMessage.cs**
+
+6. Send a message by WebPush.
+File path: **AGConnectAdmin.Examples/Example.SendWebpushMessage.cs**
+
+7. Send a message by APNs.
+File path: **AGConnectAdmin.Examples/Example.SendApnsMessage.cs**
+
 8. Send a test message.
-   > AGConnectAdmin.Examples/Example.SendTestMessage.cs
+File path: **AGConnectAdmin.Examples/Example.SendTestMessage.cs**
 
-## Question or issues
-If you want to evaluate more about HMS Core,
-[r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
 
-If you have questions about how to use HMS samples, try the following options:
-- [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services) is the best place for any programming questions. Be sure to tag your question with 
-`huawei-mobile-services`.
-- [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001) HMS Core Module is great for general questions, or seeking recommendations and opinions.
+## Technical Support
+You can visit the [Reddit community](https://www.reddit.com/r/HuaweiDevelopers/) to obtain the latest information about HMS Core and communicate with other developers.
 
-If you run into a bug in our samples, please submit an [issue](https://github.com/HMS-Core/hms-push-serverdemo-csharp/issues) to the Repository. Even better you can submit a [Pull Request](https://github.com/HMS-Core/hms-push-serverdemo-csharp/pulls) with a fix.
+If you have any questions about the sample code, try the following:
+- Visit [Stack Overflow](https://stackoverflow.com/questions/tagged/huawei-mobile-services?tab=Votes), submit your questions, and tag them with `huawei-mobile-services`. Huawei experts will answer your questions.
+- Visit the HMS Core section in the [HUAWEI Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101187876626530001?ha_source=hms1) and communicate with other developers.
+
+If you encounter any issues when using the sample code, submit your [issues](https://github.com/HMS-Core/hms-push-serverdemo-csharp/issues) or submit a [pull request](https://github.com/HMS-Core/hms-push-serverdemo-csharp/pulls).
 
 ## License
-Pushkit Csharp sample codes are licensed under the Apache License, version 2.0.
+The sample code is licensed under [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
