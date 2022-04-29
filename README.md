@@ -40,7 +40,7 @@ The following table describes the parameters related to the **AppOptions** class
 | ----------- | ----------- |
 |ClientId|App ID, which is obtained from the app information.|
 |ClientSecret|App secret, which is obtained from the app information.|
-|LoginUri|URL for Huawei OAuth 2.0 to obtain a token. For details, please refer to [OAuth 2.0-based Authentication](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/oauth2-0000001212610981?ha_source=hms1).|
+|LoginUri|URL for Huawei OAuth 2.0 to obtain a token. For details, please refer to [OAuth 2.0-based Authentication](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/oauth2-0000001212610981).|
 |ApiBaseUri|Access address of Push Kit. For details, please refer to [Downlink Message Sending](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/android-server-dev-0000001050040110?ha_source=hms1).|
 
 ## Environment Requirements
