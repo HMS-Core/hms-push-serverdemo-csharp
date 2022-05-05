@@ -6,6 +6,7 @@ English | [中文](README_ZH.md)
  * [Configuration](#Configuration)
  * [Environment Requirements](#Environment-Requirements)
  * [Sample Code](#Sample-Code)
+ * [Technical Support](#technical-support)
  * [License](#License)
 
 ## Introduction
