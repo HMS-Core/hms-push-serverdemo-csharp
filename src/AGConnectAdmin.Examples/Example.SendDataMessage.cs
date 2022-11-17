@@ -27,7 +27,7 @@ namespace AGConnectAdmin.Examples
         {
             await AGConnectMessaging.DefaultInstance.SendAsync(new Message()
             {
-                Data = "{'k1':'v1', 'k2':'v2'}",
+                Data = "{'key1':'value1', 'key2':'value2'}",
                 Android = new AndroidConfig()
                 {
                     Urgency = UrgencyPriority.HIGH
