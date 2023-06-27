@@ -56,29 +56,21 @@ C#示例代码对华为推送服务（HUAWEI Push Kit）服务端接口进行封
 
 AGConnectAdmin.Examples提供所有示例代码及相应功能。
 
-1. 发送Android透传消息。
-文件目录：AGConnectAdmin.Examples/Example.SendDataMessage.cs
+1. 发送Android透传消息。文件目录：[SendDataMessage.cs](src/AGConnectAdmin.Examples/Example.SendDataMessage.cs)
 
-2. 发送Android通知栏消息。
-文件目录：AGConnectAdmin.Examples/Example.SendAndroidMessage.cs
+2. 发送Android通知栏消息。文件目录：[SendAndroidMessage.cs](src/AGConnectAdmin.Examples/Example.SendAndroidMessage.cs)
 
-3. 基于主题发送消息。
-文件目录：AGConnectAdmin.Examples/Example.SendTopicMessage.cs
+3. 基于主题发送消息。文件目录：[SendTopicMessage.cs](src/AGConnectAdmin.Examples/Example.SendTopicMessage.cs)
 
-4. 基于条件发送消息。
-文件目录：AGConnectAdmin.Examples/Example.SendConditionMessage.cs
+4. 基于条件发送消息。文件目录：[SendConditionMessage.cs](src/AGConnectAdmin.Examples/Example.SendConditionMessage.cs)
 
-5. 向华为快应用发送消息。
-文件目录：AGConnectAdmin.Examples/Example.SendInstanceAppMessage.cs
+5. 向华为快应用发送消息。文件目录：[SendInstanceAppMessage.cs](src/AGConnectAdmin.Examples/Example.SendInstanceAppMessage.cs)
 
-6. 基于WebPush代理发送消息。
-文件目录：AGConnectAdmin.Examples/Example.SendWebpushMessage.cs
+6. 基于WebPush代理发送消息。文件目录：[SendWebpushMessage.cs](src/AGConnectAdmin.Examples/Example.SendWebpushMessage.cs)
 
-7. 基于APNs代理发送消息。
-文件目录：AGConnectAdmin.Examples/Example.SendApnsMessage.cs
+7. 基于APNs代理发送消息。文件目录：[SendApnsMessage.cs](src/AGConnectAdmin.Examples/Example.SendApnsMessage.cs)
 
-8. 发送测试消息。
-文件目录：AGConnectAdmin.Examples/Example.SendTestMessage.cs
+8. 发送测试消息。文件目录：[SendTestMessage.cs](src/AGConnectAdmin.Examples/Example.SendTestMessage.cs)
 
 
 ## 技术支持
