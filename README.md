@@ -55,29 +55,21 @@ The demo projects need to be opened using Visual Studio 2017 or a later version.
 
 **AGConnectAdmin.Examples** provides all sample code and corresponding functions.
 
-1. Send a data message to an Android app.
-File path: **AGConnectAdmin.Examples/Example.SendDataMessage.cs**
+1. Send an Android data message. Code location: [SendDataMessage.cs](src/AGConnectAdmin.Examples/Example.SendDataMessage.cs)
 
-2. Send a notification message to an Android app.
-File path: **AGConnectAdmin.Examples/Example.SendAndroidMessage.cs**
+2. Send an Android notification message. Code location: [SendAndroidMessage.cs](src/AGConnectAdmin.Examples/Example.SendAndroidMessage.cs)
 
-3. Send a message by topic.
-File path: **AGConnectAdmin.Examples/Example.SendTopicMessage.cs**
+3. Send a message by topic.Code location: [SendTopicMessage.cs](src/AGConnectAdmin.Examples/Example.SendTopicMessage.cs)
 
-4. Send a message by condition.
-File path: **AGConnectAdmin.Examples/Example.SendConditionMessage.cs**
+4. Send a message by conditions. Code location: [SendConditionMessage.cs](src/AGConnectAdmin.Examples/Example.SendConditionMessage.cs)
 
-5. Send a message to a Huawei quick app.
-File path: **AGConnectAdmin.Examples/Example.SendInstanceAppMessage.cs**
+5. Send a message to a Huawei quick app. Code location: [SendInstanceAppMessage.cs](src/AGConnectAdmin.Examples/Example.SendInstanceAppMessage.cs)
 
-6. Send a message by WebPush.
-File path: **AGConnectAdmin.Examples/Example.SendWebpushMessage.cs**
+6. Send a message through the WebPush agent. Code location: [SendWebpushMessage.cs](src/AGConnectAdmin.Examples/Example.SendWebpushMessage.cs)
 
-7. Send a message by APNs.
-File path: **AGConnectAdmin.Examples/Example.SendApnsMessage.cs**
+7. Send a message through the APNs agent. Code location: [SendApnsMessage.cs](src/AGConnectAdmin.Examples/Example.SendApnsMessage.cs)
 
-8. Send a test message.
-File path: **AGConnectAdmin.Examples/Example.SendTestMessage.cs**
+8. Send a test message. Code location: [SendTestMessage.cs](src/AGConnectAdmin.Examples/Example.SendTestMessage.cs)
 
 
 ## Technical Support
