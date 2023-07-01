@@ -25,7 +25,7 @@ namespace AGConnectAdmin
         /// </summary>
         public AppOptions()
         {
-            LoginUri = "https://oauth-login.cloud.huawei.com/oauth2/v2/token";
+            LoginUri = "https://oauth-login.cloud.huawei.com/oauth2/v3/token";
             ApiBaseUri = "https://push-api.cloud.huawei.com/v1";
         }
 
