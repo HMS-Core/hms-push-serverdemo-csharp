@@ -163,7 +163,7 @@ namespace AGConnectAdmin.Messaging
                 Topic = topic,
                 Tokens = new List<string>(registrationTokens)
             };
-            var url = $"{options.ApiBaseUri}/v1/{options.ClientId}/topic:subscribe";
+            var url = $"{options.ApiBaseUri}/{options.ClientId}/topic:subscribe";
             var payload = NewtonsoftJsonSerializer.Instance.Serialize(body);
             var content = new StringContent(payload, Encoding.UTF8, "application/json");
             var request = new HttpRequestMessage()
@@ -213,7 +213,7 @@ namespace AGConnectAdmin.Messaging
                 Topic = topic,
                 Tokens = new List<string>(registrationTokens)
             };
-            var url = $"{options.ApiBaseUri}/v1/{options.ClientId}/topic:unsubscribe";
+            var url = $"{options.ApiBaseUri}/{options.ClientId}/topic:unsubscribe";
             var payload = NewtonsoftJsonSerializer.Instance.Serialize(body);
             var content = new StringContent(payload, Encoding.UTF8, "application/json");
             var request = new HttpRequestMessage()
@@ -247,7 +247,7 @@ namespace AGConnectAdmin.Messaging
             {
                 Token = registrationToken
             };
-            var url = $"{options.ApiBaseUri}/v1/{options.ClientId}/topic:list";
+            var url = $"{options.ApiBaseUri}/{options.ClientId}/topic:list";
             var payload = NewtonsoftJsonSerializer.Instance.Serialize(body);
             var content = new StringContent(payload, Encoding.UTF8, "application/json");
             var request = new HttpRequestMessage()
