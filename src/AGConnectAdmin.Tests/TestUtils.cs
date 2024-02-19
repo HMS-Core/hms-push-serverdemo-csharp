@@ -30,7 +30,7 @@ namespace AGConnectAdmin.Tests
             {
                 Initialized = true;
                 AGConnectApp.Create(TestUtils.ReadOptionsFromDisk());
-            }       
+            }
         }
 
         public static AppOptions ReadOptionsFromDisk()
@@ -40,7 +40,8 @@ namespace AGConnectAdmin.Tests
             return new AppOptions()
             {
                 LoginUri = keyValuePairs["login_uri"],
-                ApiBaseUri = keyValuePairs["api_base_uri"],
+                ApiVersion = ApiVersion.V2,
+                ProjectId = keyValuePairs["dev_proj_id"],
                 ClientId = keyValuePairs["dev_app_id"],
                 ClientSecret = keyValuePairs["client_secret"]
             };

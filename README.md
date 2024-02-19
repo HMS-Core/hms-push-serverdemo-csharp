@@ -23,6 +23,7 @@ The following table describes main classes used in the sample code.
 | Class Name| Description|
 | ----------- | ----------- |
 |AppOptions|App-related configuration.|
+|ApiVersion|Push Kit API version.|
 |AGConnectApp|App.|
 |AGConnectMessaging|Push Kit API calling methods.|
 |Message|Message body.|
@@ -39,10 +40,11 @@ The following table describes the parameters related to the **AppOptions** class
 
 | Parameter| Description|
 | ----------- | ----------- |
+|ProjectId|Project ID, which is obtained from the project information.|
 |ClientId|App ID, which is obtained from the app information.|
 |ClientSecret|App secret, which is obtained from the app information.|
 |LoginUri|URL for Huawei OAuth 2.0 to obtain a token. For details, please refer to [OAuth 2.0-based Authentication](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/oauth2-0000001212610981).|
-|ApiBaseUri|Access address of Push Kit. For details, please refer to [Downlink Message Sending](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/android-server-dev-0000001050040110?ha_source=hms1).|
+|ApiVersion|Push Kit API version. For details, please refer to [Sending Downlink Messages](https://developer.huawei.com/consumer/en/doc/HMSCore-References/https-send-api-0000001050986197).|
 
 ## Environment Requirements
 
