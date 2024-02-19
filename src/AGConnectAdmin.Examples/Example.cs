@@ -19,6 +19,8 @@ namespace AGConnectAdmin.Examples
 {
     public partial class Example
     {
+        private const ApiVersion _apiVersion = ApiVersion.V1;
+
         #region Tokens
         private const string TOKEN_IOS = "your ios token";
         private const string TOKEN_ANDROID = "your android token";
@@ -33,6 +35,8 @@ namespace AGConnectAdmin.Examples
 
             AGConnectApp.Create(new AppOptions()
             {
+                ApiVersion = _apiVersion,
+                ProjectId = "your project id",
                 ClientId = "your client id",
                 ClientSecret = "your cliient secret",
             });

@@ -24,6 +24,7 @@ C#示例代码对华为推送服务（HUAWEI Push Kit）服务端接口进行封
 | 类名      | 说明 |
 | ----------- | ----------- |
 |AppOptions|应用相关配置|
+|ApiVersion|推送服务API版本。|
 |AGConnectApp|应用|
 |AGConnectMessaging|推送服务相关接口的调用方法|
 |Message|消息体|
@@ -40,10 +41,11 @@ C#示例代码对华为推送服务（HUAWEI Push Kit）服务端接口进行封
 
 | 参数   | 说明 |
 | ----------- | ----------- |
+|ProjectId|项目ID，从项目信息中获取。|
 |ClientId|应用ID，从应用信息中获取|
 |ClientSecret|应用访问密钥，从应用信息中获取|
 |LoginUri|华为OAuth 2.0获取token的地址。详情请参见[基于OAuth 2.0开放鉴权-客户端模式](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/oauth2-0000001212610981#section128682386159?ha_source=hms1)。|
-|ApiBaseUri|推送服务的访问地址。详情请参见[推送服务-下行消息](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/android-server-dev-0000001050040110?ha_source=hms1)。|
+|ApiVersion|推送服务API版本。 详情请参见【下行消息发送】(https://developer.huawei.com/consumer/cn/doc/HMSCore-References/https-send-api-0000001050986197)。|
 
 ## 环境要求
 

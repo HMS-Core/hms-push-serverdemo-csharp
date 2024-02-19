@@ -26,20 +26,32 @@ namespace AGConnectAdmin
         public AppOptions()
         {
             LoginUri = "https://oauth-login.cloud.huawei.com/oauth2/v3/token";
-            ApiBaseUri = "https://push-api.cloud.huawei.com/v1";
+            ApiVersion = ApiVersion.V2;
         }
 
         internal AppOptions(AppOptions options)
         {
             this.LoginUri = options.LoginUri;
-            this.ApiBaseUri = options.ApiBaseUri;
+            this.ApiVersion = options.ApiVersion;
+            this.ProjectId = options.ProjectId;
             this.ClientId = options.ClientId;
             this.ClientSecret = options.ClientSecret;
         }
 
         internal string GetApiUri()
         {
-            return ApiBaseUri + string.Format("/{0}/messages:send", ClientId) ;
+            var res = ApiBaseUri;
+            switch (ApiVersion)
+            {
+                case ApiVersion.V1:
+                    res += '/' + ClientId;
+                    break;
+                case ApiVersion.V2:
+                    res += '/' + ProjectId;
+                    break;
+            }
+            res += "/messages:send";
+            return res;
         }
 
         /// <summary>
@@ -48,10 +60,20 @@ namespace AGConnectAdmin
         public string LoginUri { get; set; }
 
         /// <summary>
-        /// Gets or sets the API base path, it's optional.
+        /// Gets or sets the PushKit API version. Default value is project-level (V2)
         /// This property is optional.
         /// </summary>
-        public string ApiBaseUri { get; set; }
+        public ApiVersion ApiVersion { get; set; }
+
+        /// <summary>
+        /// Gets the API base uri according version
+        /// </summary>
+        public string ApiBaseUri { get => ApiVersion.ApiBaseUri(); }
+
+        /// <summary>
+        /// Gets or sets the PROJECT ID from AGC
+        /// </summary>
+        public string ProjectId { get; set; }
 
         /// <summary>
         /// Gets or sets the APP ID from AGC.
